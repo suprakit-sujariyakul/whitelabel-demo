@@ -1,3 +1,5 @@
 packages:
-  - 'modules/*'
+  - 'modules/core/*'
+  - 'modules/plugins/*'
+  - 'modules/shared/*'
   - 'app'

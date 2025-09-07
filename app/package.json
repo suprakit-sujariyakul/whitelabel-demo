@@ -16,9 +16,6 @@
 		"test": "npm run test:unit -- --run && npm run test:e2e",
 		"test:e2e": "playwright test"
 	},
-	"dependencies": {
-		"@core/auth": "workspace:*"
-	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",
@@ -43,9 +40,7 @@
 		"vitest": "^3.2.3",
 		"vitest-browser-svelte": "^0.1.0"
 	},
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"esbuild"
-		]
+	"dependencies": {
+		"@core/auth": "workspace:*"
 	}
 }
