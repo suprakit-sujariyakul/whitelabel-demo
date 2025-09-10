@@ -1,0 +1,22 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"lobby_title": "ล็อบบี้เกม",
+	"lobby_settings": "การตั้งค่า",
+	"lobby_logout": "ออกจากระบบ",
+	"lobby_your_profile": "โปรไฟล์ของคุณ",
+	"lobby_playing_as_guest": "เล่นในฐานะแขก",
+	"lobby_create_account": "สร้างบัญชี",
+	"lobby_online_players": "ผู้เล่นออนไลน์",
+	"lobby_online_players_count": "ผู้เล่นออนไลน์ ({count} คน)",
+	"lobby_available_rooms": "ห้องที่พร้อมใช้งาน",
+	"lobby_create_room": "สร้างห้อง",
+	"lobby_join_room": "เข้าร่วมห้อง",
+	"lobby_spectate": "ดู",
+	"lobby_no_rooms_available": "ไม่มีห้องที่พร้อมใช้งาน สร้างห้องใหม่เพื่อเริ่มต้น!",
+	"lobby_private": "ส่วนตัว",
+	"lobby_players": "ผู้เล่น",
+	"lobby_joined": "เข้าร่วมเมื่อ {date}",
+	"lobby_status_online": "ออนไลน์",
+	"lobby_status_away": "ไม่อยู่",
+	"lobby_status_offline": "ออฟไลน์"
+}

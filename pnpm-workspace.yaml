@@ -1,6 +1,6 @@
 packages:
   - 'modules/core/*'
-  - 'modules/plugins/*'
+  - 'modules/plugin/*'
   - 'modules/shared/*'
   - 'clients/*'
   - 'app'

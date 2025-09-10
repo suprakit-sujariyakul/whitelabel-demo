@@ -41,6 +41,7 @@
 		"vitest-browser-svelte": "^0.1.0"
 	},
 	"dependencies": {
-		"@core/auth": "workspace:*"
+		"@core/auth": "workspace:*",
+		"@plugin/lobby": "workspace:*"
 	}
 }

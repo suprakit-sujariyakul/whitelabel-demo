@@ -1,0 +1,29 @@
+{
+	"name": "@clients/client-a",
+	"version": "1.0.0",
+	"description": "Configuration and assets for Acme Corporation (Client A)",
+	"type": "module",
+	"exports": {
+		".": "./src/lib/index.ts",
+		"./config": "./src/lib/config.json",
+		"./theme": "./src/lib/theme.css",
+		"./messages/*": "./messages/*.json"
+	},
+	"files": [
+		"src/**/*",
+		"messages/**/*",
+		"*.json",
+		"README.md"
+	],
+	"keywords": [
+		"client-config",
+		"whitelabel",
+		"configuration"
+	],
+	"client": {
+		"id": "client-a",
+		"name": "Acme Corporation",
+		"tier": "enterprise",
+		"deploymentDate": "2024-01-15"
+	}
+}

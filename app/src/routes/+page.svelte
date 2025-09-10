@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { ScreeningPage } from '@core/auth'
-	import { m } from '$lib/paraglide/messages'
+	import { ScreeningPage } from '@core/auth';
+	import { m } from '$lib/paraglide/messages';
 </script>
 
 <ScreeningPage 
