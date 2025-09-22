@@ -1,6 +1,5 @@
 {
 	"name": "app",
-	"private": true,
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
@@ -13,7 +12,7 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
-		"test": "npm run test:unit -- --run && npm run test:e2e",
+		"test": "pnpm run test:unit -- --run && pnpm run test:e2e",
 		"test:e2e": "playwright test"
 	},
 	"devDependencies": {
@@ -24,6 +23,7 @@
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.22.0",
 		"@sveltejs/vite-plugin-svelte": "^6.0.0",
+		"@types/node": "^24.5.2",
 		"@vitest/browser": "^3.2.3",
 		"eslint": "^9.18.0",
 		"eslint-config-prettier": "^10.0.1",
@@ -42,6 +42,7 @@
 	},
 	"dependencies": {
 		"@core/auth": "workspace:*",
-		"@plugin/lobby": "workspace:*"
+		"@plugin/lobby": "workspace:*",
+		"@shared/ui": "workspace:*"
 	}
 }

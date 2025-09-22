@@ -1,0 +1,7 @@
+{
+	"plugins": {
+		"lobby": false,
+		"payment": true,
+		"analytics": true
+	}
+}

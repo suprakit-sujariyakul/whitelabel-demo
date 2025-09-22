@@ -1,5 +1,0 @@
-{
-  "clientId": "client-a",
-  "clientName": "Acme Corporation",
-  "plugins": ["lobby"]
-}
