@@ -1,0 +1,6 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"common_hello_world": "Hello, {name}!",
+	"common_app_title": "Whitelabel Demo",
+	"common_app_description": "A modular application with internationalization"
+}

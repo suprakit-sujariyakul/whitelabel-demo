@@ -1,0 +1,11 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"auth_login_title": "Sign In",
+	"auth_login_email": "Email Address",
+	"auth_login_password": "Password",
+	"auth_login_submit": "Sign In",
+	"auth_signup_title": "Create Account",
+	"auth_signup_confirmPassword": "Confirm Password",
+	"auth_error_invalidCredentials": "Invalid email or password",
+	"auth_success_loginSuccess": "Welcome back, {name}!"
+}

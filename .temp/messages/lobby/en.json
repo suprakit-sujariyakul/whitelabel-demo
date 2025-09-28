@@ -1,0 +1,22 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"lobby_title": "Game Lobby",
+	"lobby_settings": "Settings",
+	"lobby_logout": "Logout",
+	"lobby_your_profile": "Your Profile",
+	"lobby_playing_as_guest": "Playing as Guest",
+	"lobby_create_account": "Create Account",
+	"lobby_online_players": "Online Players",
+	"lobby_online_players_count": "Online Players ({count})",
+	"lobby_available_rooms": "Available Rooms",
+	"lobby_create_room": "Create Room",
+	"lobby_join_room": "Join Room",
+	"lobby_spectate": "Spectate",
+	"lobby_no_rooms_available": "No rooms available. Create one to get started!",
+	"lobby_private": "Private",
+	"lobby_players": "players",
+	"lobby_joined": "Joined {date}",
+	"lobby_status_online": "online",
+	"lobby_status_away": "away",
+	"lobby_status_offline": "offline"
+}
