@@ -1,0 +1,6 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"common_hello_world": "สวัสดี {name}!",
+	"common_app_title": "เดโม่แอปพลิเคชัน",
+	"common_app_description": "แอปพลิเคชันแบบโมดูลาร์พร้อมระบบหลายภาษา"
+}

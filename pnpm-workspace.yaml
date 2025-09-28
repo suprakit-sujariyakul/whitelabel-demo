@@ -1,6 +1,0 @@
-packages:
-  - 'modules/core/*'
-  - 'modules/plugin/*'
-  - 'modules/shared/*'
-  - 'clients/*'
-  - 'app'

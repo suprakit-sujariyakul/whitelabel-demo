@@ -10,8 +10,7 @@
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
 		"test:e2e": "playwright test",
-
-		"dev": "pnpm run dev:app:dev",
+		"dev": "vite dev",
 		"dev:app": "pnpm run dev:app:dev",
 		"dev:app:dev": "node scripts/workspace-builder.js clean && ENV=dev node scripts/workspace-builder.js build && cd .temp && pnpm dev",
 		"dev:app:stag": "node scripts/workspace-builder.js clean && ENV=stag node scripts/workspace-builder.js build && cd .temp && pnpm dev",
@@ -24,8 +23,7 @@
 		"dev:client-b:dev": "node scripts/workspace-builder.js clean && CLIENT=client-b ENV=dev node scripts/workspace-builder.js build && cd .temp && pnpm dev",
 		"dev:client-b:stag": "node scripts/workspace-builder.js clean && CLIENT=client-b ENV=stag node scripts/workspace-builder.js build && cd .temp && pnpm dev",
 		"dev:client-b:prod": "node scripts/workspace-builder.js clean && CLIENT=client-b ENV=prod node scripts/workspace-builder.js build && cd .temp && pnpm dev",
-
-		"build": "pnpm run build:app:dev",
+		"build": "vite build",
 		"build:app": "pnpm run build:app:dev",
 		"build:app:dev": "node scripts/workspace-builder.js clean && ENV=dev node scripts/workspace-builder.js build && cd .temp && pnpm build",
 		"build:app:stag": "node scripts/workspace-builder.js clean && ENV=stag node scripts/workspace-builder.js build && cd .temp && pnpm build",
@@ -42,8 +40,7 @@
 		"build:all:dev": "pnpm run build:app:dev && pnpm run build:client-a:dev && pnpm run build:client-b:dev",
 		"build:all:stag": "pnpm run build:app:stag && pnpm run build:client-a:stag && pnpm run build:client-b:stag",
 		"build:all:prod": "pnpm run build:app:prod && pnpm run build:client-a:prod && pnpm run build:client-b:prod",
-
-		"test": "pnpm run test:app:dev",
+		"test": "vitest run && playwright test",
 		"test:app": "pnpm run test:app:dev",
 		"test:app:dev": "node scripts/workspace-builder.js clean && ENV=dev node scripts/workspace-builder.js build && cd .temp && pnpm test:unit -- --run && pnpm test:e2e",
 		"test:app:stag": "node scripts/workspace-builder.js clean && ENV=stag node scripts/workspace-builder.js build && cd .temp && pnpm test:unit -- --run && pnpm test:e2e",
@@ -60,9 +57,8 @@
 		"test:all:dev": "pnpm run test:client-a:dev && pnpm run test:client-b:dev",
 		"test:all:stag": "pnpm run test:client-a:stag && pnpm run test:client-b:stag",
 		"test:all:prod": "pnpm run test:client-a:prod && pnpm run test:client-b:prod",
-
-		"preview": "pnpm run preview:app:dev",
-		"preview:app": "pnpm run preview:app:dev", 
+		"preview": "vite preview",
+		"preview:app": "pnpm run preview:app:dev",
 		"preview:app:dev": "node scripts/workspace-builder.js clean && ENV=dev node scripts/workspace-builder.js build && cd .temp && pnpm build && pnpm preview",
 		"preview:app:stag": "node scripts/workspace-builder.js clean && ENV=stag node scripts/workspace-builder.js build && cd .temp && pnpm build && pnpm preview",
 		"preview:app:prod": "node scripts/workspace-builder.js clean && ENV=prod node scripts/workspace-builder.js build && cd .temp && pnpm build && pnpm preview",
@@ -74,7 +70,6 @@
 		"preview:client-b:dev": "node scripts/workspace-builder.js clean && CLIENT=client-b ENV=dev node scripts/workspace-builder.js build && cd .temp && pnpm build && pnpm preview",
 		"preview:client-b:stag": "node scripts/workspace-builder.js clean && CLIENT=client-b ENV=stag node scripts/workspace-builder.js build && cd .temp && pnpm build && pnpm preview",
 		"preview:client-b:prod": "node scripts/workspace-builder.js clean && CLIENT=client-b ENV=prod node scripts/workspace-builder.js build && cd .temp && pnpm build && pnpm preview",
-
 		"cleanup:workspace": "node scripts/workspace-builder.js clean"
 	},
 	"devDependencies": {
