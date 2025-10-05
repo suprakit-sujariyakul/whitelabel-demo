@@ -2,6 +2,24 @@
 
 A modular whitelabel application architecture with client-specific overrides and environment-based builds, enabling multiple clients to deploy customized versions of a core application.
 
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd whitelabel-demo
+
+# Install dependencies and build packages
+pnpm install
+
+# Start development server
+pnpm run dev                    # Default app
+pnpm run dev:client-a          # Client A with custom overrides
+pnpm run dev:client-b          # Client B with different features
+```
+
+> **Note**: `pnpm install` automatically builds all workspace packages via the `postinstall` script, so you don't need to manually build each package.
+
 ## 📋 Business Requirements
 
 ### Core Purpose
@@ -86,6 +104,31 @@ The Vite plugin resolves imports with the following priority:
 1. **🎨 CLIENT + ENV** - `clients/{client}/src/{env}/{file}` (highest)
 2. **🎨 CLIENT ONLY** - `clients/{client}/src/{file}` (medium) 
 3. **📱 APP FALLBACK** - `app/src/{file}` (lowest)
+
+## 🔧 Development Setup
+
+### Automatic Package Building
+
+The project uses a `postinstall` script to automatically build all workspace packages when you run `pnpm install`. This ensures that:
+
+- New developers don't encounter import resolution errors
+- All workspace packages (`@shared/*`, `@core/*`, `@plugin/*`) have their `dist` directories ready
+- No manual package building is required after cloning
+
+```bash
+# This automatically builds all packages:
+pnpm install
+
+# If you need to rebuild packages manually:
+pnpm run build:packages
+```
+
+### Package Dependencies
+
+The workspace packages must be built because:
+- They export from `dist/` directories (not `src/`)
+- The app imports them as `@shared/ui`, `@core/auth`, `@plugin/lobby`
+- Without built packages, Vite cannot resolve these imports
 
 ## 🚀 Commands
 

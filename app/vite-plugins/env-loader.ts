@@ -21,7 +21,6 @@ export function envLoader(): PluginOption {
 			const env = process.env.ENV;
 			
 			if (!env) {
-				console.warn('ENV not specified, skipping environment file copy');
 				return;
 			}
 
@@ -29,7 +28,7 @@ export function envLoader(): PluginOption {
 			const targetEnvPath = path.resolve(__dirname, '../.env');
 
 			if (!fs.existsSync(sourceEnvPath)) {
-				console.warn(`Environment file not found: ${sourceEnvPath}`);
+				console.warn(`[envLoader] Environment file not found: ${sourceEnvPath}`);
 				return;
 			}
 
@@ -45,9 +44,8 @@ export function envLoader(): PluginOption {
 			try {
 				// Copy the environment-specific file to .env
 				fs.copyFileSync(sourceEnvPath, targetEnvPath);
-				console.log(`Copied ${sourceEnvPath} to ${targetEnvPath}`);
 			} catch (error) {
-				console.error(`Failed to copy environment file:`, error);
+				console.error(`[envLoader] Failed to copy environment file:`, error);
 			}
 		}
 	};
